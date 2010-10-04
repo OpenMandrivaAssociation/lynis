@@ -1,7 +1,7 @@
 
 %define _includedir	/usr/share/lynis/include
 %define _pluginsdir	/usr/share/lynis/plugins
-%define _dbdir	        /usr/share/lynis/db
+%define _dbdir		/usr/share/lynis/db
 %define _bindir		/usr/bin
 
 Summary:		Security and system auditing tool
@@ -9,7 +9,7 @@ Name:			lynis
 Version:		1.2.9
 Release:		%mkrel 1
 License:		GPL
-Group:			Applications/System
+Group:			System/Configuration/Other
 Source:			lynis-%{version}.tar.gz
 BuildRoot:		 %{_tmppath}/%{name}-%{version}-build  
 URL:			http://www.rootkit.nl/
@@ -20,6 +20,8 @@ BuildRequires: spec-helper
 
 %description
 Lynis is a security and system auditing tool. It scans a system on the
+
+
 most interesting parts useful for audits, like:
      - Security enhancements
      - Logging and auditing options
