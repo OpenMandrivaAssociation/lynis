@@ -36,7 +36,7 @@ See http://www.rootkit.nl for a full description and documentation.
 
 
 # Make directory with our name, instead of with version
-%setup 
+%setup -q
 
 
 
