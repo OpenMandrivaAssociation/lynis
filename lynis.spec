@@ -84,3 +84,61 @@ install db/* ${RPM_BUILD_ROOT}%{_dbdir}
 %dir /usr/share/lynis/include
 %dir /usr/share/lynis/plugins
 
+
+
+%changelog
+* Mon Oct 04 2010 Zombie Ryushu <ryushu@mandriva.org> 1.2.9-1mdv2011.0
++ Revision: 582920
+- Fix group
+- Fix group
+- import lynis
+
+
+
+* Wed Oct 08 2008 -n mrdocs at opensuse.org
+- change the files listing to pacify rpmlint
+* Tue Aug 26 2008 -n mrdocs at opensuse.org
+- 1.2.1 release
+* Tue Aug 26 2008 -n mrdocs at opensuse.org
+- 1.2.0 release
+* Sun Aug 10 2008 -n mrdocs at opensuse.org
+- New test: AppArmor framework check [MACF-6204]
+- New test: FreeBSD boot loader test [BOOT-5124]
+- New test: PHP option register_globals [PHP-2368]
+- New test: Promiscuous network interfaces (Linux) [NETW-3015]
+- Report option 'bootloader' added to several tests
+- Added readlink binary check
+- Extended file check (IsWorldWritable) for symlinks
+- Added /usr/local/etc to sudoers test [AUTH-9250]
+- Improved FreeBSD banner output [BANN-7113]
+- Removed incorrect line at promiscuous interface test [NETW-3014]
+- Fix: Show only once the GRUB test output [BOOT-5121]
+- Fix: Typo in NTP test [TIME-3104]
+- Fix: Skip NTP test in /etc/cron.d if empty [TIME-3104]
+- Fix: Initialize values when performing an update check without connection
+- Fix: Solaris id function has been fixed
+- Disabled FreeBSD double packages tests, due minor issues [PKGS-7303]
+- Changed LDAP/MySQL running states [LDAP-2219] [DBS-1804]
+- Replaced ifconfig calls with IFCONFIGBINARY
+- Renamed tests_auditing to tests_mac_frameworks
+- Several tests improved with extended logging
+
+* Thu Jul 17 2008 -n mrdocs at opensuse.org
+- several improved tests for networking, php, LDAP, NTP, and MySQL
+- extended support for Mac OS X and Solaris
+- updated documentation on the Web site, profile, and FAQ. 
+* Sun Jun 29 2008 -n mrdocs at opensuse.org
+- It also fixes several incorrect messages, has improved logging, SuSE Linux detection
+- and a better way of collecting the warning messages
+* Fri Jun 20 2008 -n mrdocs at opensuse.org
+- This release adds a big amount of new tests including syslog
+- Solaris zones, LDAP authentication, iptables, sudoers files
+- and home directories. 
+- improved warning/error messages, improved logging, ID reassignments
+- few small bugfixes. 
+
+* Wed Jun 11 2008 -n mrdocs at opensuse.org
+- new version 
+* Sun Jun 01 2008 -n mrdocs at opensuse.org
+- first build server package
+
