@@ -7,7 +7,7 @@
 Summary:		Security and system auditing tool
 Name:			lynis
 Version:		1.2.9
-Release:		%mkrel 1
+Release:		2
 License:		GPL
 Group:			System/Configuration/Other
 Source:			lynis-%{version}.tar.gz
