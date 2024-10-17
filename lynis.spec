@@ -12,7 +12,7 @@ License:		GPL
 Group:			System/Configuration/Other
 Source:			lynis-%{version}.tar.gz
 BuildRoot:		 %{_tmppath}/%{name}-%{version}-build  
-URL:			http://www.rootkit.nl/
+URL:			https://www.rootkit.nl/
 BuildArch:		noarch
 %if 0%{?mandriva_version}
 BuildRequires: spec-helper
